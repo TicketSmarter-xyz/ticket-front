@@ -50,7 +50,7 @@ const CcxApiTest = ({ signature, signing_message, address }) => {
   );
 };
 
-export default function App() {
+export default function SignUpWalletConnect() {
   const [connected, setConnected] = useState(connector.connected);
   const [number, setNumber] = useState(0);
   const [message, setMessage] = useState("논스는 원하는대로! 1234");
