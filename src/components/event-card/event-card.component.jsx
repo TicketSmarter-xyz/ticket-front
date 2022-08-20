@@ -1,4 +1,5 @@
 import React from "react";
+import "./event-card.styles.css";
 
 const EventCard = ({event}) => {
 
@@ -15,30 +16,41 @@ const EventCard = ({event}) => {
                       </a>
                     </p> */}
                     <a href={event.href} className="block mt-2">
-                      <p className="text-xl font-semibold text-gray-900">{event.artist}</p>
-                      <p className="mt-3 text-base text-gray-500">{event.venue}</p>
+                      <div className="mt-6 flex items-center event-info">
+                        <p className="text-xl font-semibold text-gray-900 artist">{event.artist}</p>
+                        <p className="startin-at">Starting at</p>
+                      </div>
+                      <div className="mt-6 flex items-center event-info">
+                        <div className="ml-3 venue-date">
+                            <p className="mt-3 text-base text-gray-500 venue">{event.venue}</p>
+                            <p className="mt-3 text-base text-gray-500 date">{event.date}</p>
+                        </div>
+                            <p className="mt-3 text-base text-gray-500 price">{event.price}</p>
+                      </div>
                     </a>
                   </div>
-                  <div className="mt-6 flex items-center">
+                  {/* <div className="mt-6 flex items-center">
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">
-                        <a href={event.author.href} className="hover:underline">
-                          {event.author.name}
+                        <a href={event.date} className="hover:underline">
+                          {event.venue}
                         </a>
                       </p>
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime={event.datetime}>{event.date}</time>
                         <span aria-hidden="true">&middot;</span>
-                        <span>{event.readingTime} read</span>
                       </div>
                     </div>
+                        <div className="flex space-x-1 text-sm text-gray-500">
+                            <time>{event.price}</time>
+                            <span aria-hidden="true">&middot;</span>
+                        </div>
                     <div className="flex-shrink-0">
-                      <a href={event.author.href}>
-                        <span className="sr-only">{event.author.name}</span>
-                        <img className="h-10 w-10 rounded-full" src={event.author.imageUrl} alt="" />
-                      </a>
+                      <div>
+                        <span className="sr-only">{event.price}</span>
+                      </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
     )

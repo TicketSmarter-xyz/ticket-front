@@ -1,0 +1,37 @@
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #18181B;
+}
+
+.venue-date {
+    margin-left: 0;
+    color: #18181B;
+}
+
+.event-info {
+    justify-content: space-between;
+    margin-top: 0.7rem;
+    /* align-items:center; */
+}
+
+.venue {
+    font-size: 1rem;
+    color: #18181B;
+    margin-top: 0;
+}
+
+.artist {
+    font-size: 2rem;
+    color: #18181B;
+}
+
+.date {
+    color: #52525B;
+    margin-top: 0;
+}
+
+.starting-at {
+    align-self:flex-end;
+    bottom: 0;
+}
