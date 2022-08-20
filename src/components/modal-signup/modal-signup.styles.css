@@ -4,7 +4,27 @@
 }
 
 .modal {
-   
-    height: 400px;
+    align-self: center;
+    max-width: 800px;
+    height: 300px;
+    border: grey 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.google {
+    color: white;
+    background-color: darkorange;
+    width: 180px;
+    border-color: orange;
+}
+
+.google:hover {
+    color: white;
+    background-color: orangered;
     
+}
+
+.wallet-connect {
+    width: 180px;
 }

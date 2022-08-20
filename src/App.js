@@ -29,13 +29,18 @@ const App = () => {
         <Routes>
           <Route path='/' element={
             <div>
-              <BackDrop visibility="visible" />
+              {/* <BackDrop visibility="visible" /> */}
               <EventGrid/>
             </div>
           } />
           <Route path='/signup' element={
             <div>
               <SignUp/>
+              </div>
+            } />
+            <Route path='/signup/wallet-connect' element={
+            <div>
+              <SignUpWalletConnect/>
               </div>
             } />
         </Routes>

@@ -61,6 +61,8 @@ export default function SignUpWalletConnect() {
   const [qrcode, setQrcode] = useState();
   const [chainId, setChainId] = useState();
 
+  // useEffect(handleClockLoginWithWalletConnect, []);
+
   const handleClockLoginWithWalletConnect = () => {
     // Create a connector
     console.log("handleClickConnect");
