@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 200px;
+    height: 30vh;
     
 }
 
@@ -13,4 +13,45 @@
 
 .artist-ticket {
     color: white;
+}
+
+.background-price {
+    background-color: #EC2F51;
+}
+
+.text-ticket {
+    color: white;
+}
+
+.buy-ticket {
+    background-color: white;
+    color: #EC2F51;   
+}
+
+.whats-included {
+    color: black;
+}
+
+.ticket-details-main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.ticket-details-container {
+    margin-right: 30px;
+}
+
+.ticket-detail-1 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.ticket-detail-2 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.head-container {
+    padding-left: 0;
+    padding-top: 0;
 }
