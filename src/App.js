@@ -14,6 +14,7 @@ import {
 import Profile from "./components/profile/profile.components";
 import TicketPrice from "./components/ticket-price/ticket-price.component";
 import OrgProfile from "./pages/Organizer/Profile";
+import CreateEvent from "./pages/Organizer/CreateEvent";
 
 const App = () => {
 
@@ -112,6 +113,11 @@ const App = () => {
             <div>
               <OrgProfile 
               />
+            </div>
+          } />
+          <Route path='/create-event' element={
+            <div>
+              <CreateEvent />
             </div>
           } />
         </Routes>
