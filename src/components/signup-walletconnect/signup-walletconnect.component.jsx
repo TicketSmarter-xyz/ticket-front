@@ -2,7 +2,6 @@
 import WalletConnect from "@walletconnect/client";
 import { convertUtf8ToHex } from "@walletconnect/utils";
 import { useEffect, useState } from "react";
-import { recoverPersonalSignature } from "eth-sig-util";
 import WCQrMordal from "@walletconnect/qrcode-modal";
 import QRCode from "qrcode.react";
 import axios from "axios";
