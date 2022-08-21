@@ -1,8 +1,8 @@
 .background-ticket {
-  background: url("https://www.elfinanciero.com.mx/resizer/2lFrSEDPrNB6nFkCfQySxCbO6yM=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/LBIXDYF26FENZI6EPMUUI4GRXQ.jpg");
+  background: url("./imagen_splash.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 120vw;
+  background-position-y: bottom;
+  width: 100vw;
   height: 250px;
-  
 }
