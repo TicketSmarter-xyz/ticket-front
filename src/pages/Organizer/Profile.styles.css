@@ -4,5 +4,12 @@
   background-size: cover;
   width: 120vw;
   height: 250px;
-  
+}
+
+.background-new-ticket {
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 120vw;
+  height: 250px;
 }
