@@ -5,7 +5,6 @@ import NavBar from "./components/navbar/navbar.component";
 import "./App.css";
 import SignUpWalletConnect from "./components/signup-walletconnect/signup-walletconnect.component";
 import SignUp from "./pages/signup.pages";
-import BackDrop from "./components/backdrop/backdrop.component";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,6 +13,7 @@ import {
 } from "react-router-dom";
 import Profile from "./components/profile/profile.components";
 import TicketPrice from "./components/ticket-price/ticket-price.component";
+import OrgProfile from "./pages/Organizer/Profile";
 
 const App = () => {
 
@@ -87,6 +87,7 @@ const App = () => {
               {/* <BackDrop visibility="visible" /> */}
               <EventGrid
                 events={events}
+                title={"Events made for you"}
               />
               <Profile />
             </div>
@@ -104,6 +105,12 @@ const App = () => {
           <Route path='/:id/tickets' element={
             <div>
               <TicketPrice 
+              />
+            </div>
+          } />
+          <Route path='/org-profile' element={
+            <div>
+              <OrgProfile 
               />
             </div>
           } />
