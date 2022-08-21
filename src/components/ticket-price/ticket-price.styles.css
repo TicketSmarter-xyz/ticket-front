@@ -1,0 +1,16 @@
+.background-ticket {
+    background: url("https://www.elfinanciero.com.mx/resizer/2lFrSEDPrNB6nFkCfQySxCbO6yM=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/LBIXDYF26FENZI6EPMUUI4GRXQ.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 200px;
+    
+}
+
+.background-ticket-container {
+    margin: 0 auto;
+}
+
+.artist-ticket {
+    color: white;
+}

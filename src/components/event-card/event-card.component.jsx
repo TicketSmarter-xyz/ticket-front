@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./event-card.styles.css";
+import { useNavigate } from "react-router-dom";
 
 const EventCard = ({event}) => {
 
+    const [selectedEvent, setSelectedEvent] = useState({});
+
+    const handleSelectEvent = () => {
+        console.log("handle selected event triggered");
+        // const navigate = useNavigate()
+        setSelectedEvent(event);
+        // navigate(`./${event.id}/tickets`, { replace: true});
+    }
+
     return (
         <div key={event.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <a href = {"./" + event.id + "/tickets"}>
                 <div className="flex-shrink-0">
                   <img className="h-48 w-full object-cover" src={event.imageUrl} alt="" />
                 </div>
@@ -29,30 +40,9 @@ const EventCard = ({event}) => {
                       </div>
                     </a>
                   </div>
-                  {/* <div className="mt-6 flex items-center">
-                    <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">
-                        <a href={event.date} className="hover:underline">
-                          {event.venue}
-                        </a>
-                      </p>
-                      <div className="flex space-x-1 text-sm text-gray-500">
-                        <time dateTime={event.datetime}>{event.date}</time>
-                        <span aria-hidden="true">&middot;</span>
-                      </div>
-                    </div>
-                        <div className="flex space-x-1 text-sm text-gray-500">
-                            <time>{event.price}</time>
-                            <span aria-hidden="true">&middot;</span>
-                        </div>
-                    <div className="flex-shrink-0">
-                      <div>
-                        <span className="sr-only">{event.price}</span>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
-              </div>
+                </a>
+        </div>
     )
 
 }
