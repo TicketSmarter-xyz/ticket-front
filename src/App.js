@@ -12,6 +12,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Profile from "./components/profile/profile.components";
 
 const App = () => {
 
@@ -23,6 +24,8 @@ const App = () => {
     //setBackdropVisibility("hidden");
   }
 
+  
+
   return (
     <Router>
         <NavBar />
@@ -31,6 +34,7 @@ const App = () => {
             <div>
               {/* <BackDrop visibility="visible" /> */}
               <EventGrid/>
+              <Profile />
             </div>
           } />
           <Route path='/signup' element={

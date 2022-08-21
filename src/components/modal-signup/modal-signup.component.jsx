@@ -9,6 +9,8 @@ import WCQrMordal from "@walletconnect/qrcode-modal";
 import QRCode from "qrcode.react";
 import axios from "axios";
 import { Router, Redirect } from "react-router-dom";
+import LoginButton from "../login-button/login-button.components";
+
 
 
 
@@ -192,17 +194,21 @@ export default function ModalSignUp() {
                 onClick={(signedAccount) ? handleClickDisconnect : handleClockLoginWithWalletConnect}
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 wallet-connect"
               >
-                {(signedAccount) ? "Disconnect" : "Connect"}
+                {(signedAccount) ? "Disconnect Wallet Connect" : "Login WalletConnect"}
               </button>
             </div>
             <div className="ml-3 inline-flex">
-              <a
+              {/* <a
                 href="#"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 google"
               >
                 Google
-              </a>
+              </a> */}
+              <div className="google">
+                <LoginButton />
+              </div>
             </div>
+            
             {/* <div className="inline-flex rounded-md shadow">
               <button
                 // href="./signup/wallet-connect"
@@ -213,6 +219,8 @@ export default function ModalSignUp() {
               </button>
             </div>
             <h1>signed account {signedAccount}</h1> */}
+            
+            
           </div>
         </div>
       </div>

@@ -13,10 +13,14 @@
 }
 
 .google {
+    display: flex;
     color: white;
     background-color: darkorange;
-    width: 180px;
+    width: 220px;
     border-color: orange;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
 }
 
 .google:hover {
@@ -26,5 +30,5 @@
 }
 
 .wallet-connect {
-    width: 180px;
+    width: 220px;
 }
