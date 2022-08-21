@@ -70,7 +70,8 @@ const App = () => {
   ]
 
   const [user, setUser] = useState({});
-  const [backdropVisibility, setBackdropVisibility] = useState("visible");
+  // const [backdropVisibility, setBackdropVisibility] = useState("visible");
+  const [selectedEvent, setSelectedEvent] = useState({});
 
   function removeBackDrop() {
     console.log("removeBackground triggered");
@@ -88,7 +89,6 @@ const App = () => {
               {/* <BackDrop visibility="visible" /> */}
               <EventGrid
                 events={events}
-                title={"Events made for you"}
               />
               <Profile />
             </div>
@@ -105,7 +105,7 @@ const App = () => {
           } />
           <Route path='/:id/tickets' element={
             <div>
-              <TicketPrice 
+              <TicketPrice
               />
             </div>
           } />

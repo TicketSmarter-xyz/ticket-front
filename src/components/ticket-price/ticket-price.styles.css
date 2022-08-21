@@ -28,6 +28,15 @@
     color: #EC2F51;   
 }
 
+.buy-ticket:hover {
+    /* background-color: #EC2F51;
+    color: white;
+    border: 1px solid white;    */
+    background-color: white;
+    color: #EC2F51; 
+    font-weight: 900;
+}
+
 .whats-included {
     color: black;
 }

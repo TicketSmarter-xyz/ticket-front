@@ -2,6 +2,7 @@ import React from "react";
 import "./Profile.styles.css";
 import EventGrid from "../../components/event-grid/event-grid.component";
 import EventCard from "../../components/event-card/event-card.component";
+import venueImage from "./imagen_splash.jpeg";
 
 function Profile() {
   const events = [
