@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import React, { useEffect, useState } from 'react'
 import { CheckCircleIcon } from '@heroicons/react/solid'
-import "./ticket-price.styles.css"
+import "./ticket-purchased.styles.css"
 
 
 const includedFeatures = [
@@ -14,7 +14,7 @@ const includedFeatures = [
 
 
 
-export default function TicketPrice() {
+export default function TicketPurchased() {
     const events = [
         {
           id: 1,
@@ -190,7 +190,7 @@ export default function TicketPrice() {
                 <div className="mt-6">
                   <div className="rounded-md shadow">
                     <a
-                      href="../purchased-ticket"
+                      href="#"
                       className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 buy-ticket"
                     >
                       Buy ticket

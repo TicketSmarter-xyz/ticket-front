@@ -6,6 +6,18 @@ import venueImage from "./imagen_splash.jpeg";
 
 function Profile() {
   const events = [
+
+    {
+      id: 0,
+      artist: "Event name",
+      href: "#",
+      venue: "Theatre name",
+      date: "Date",
+      datetime: "2020-03-16",
+      imageUrl:
+        "https://s3.amazonaws.com/appforest_uf/f1661082669724x190884339802656500/Screen%20Shot%202022-08-21%20at%206.46.13.png",
+      price: "$$$",
+    },
     {
       id: 1,
       artist: "Bad Bunny",
@@ -73,13 +85,12 @@ function Profile() {
       <div className="pt-12 sm:pt-16 lg:pt-20 bg-gray-100 background-ticket">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 "></div>
       </div>
-      <div>
+      <div className="venue-info-container">
         <h3>Oracle Theater</h3>
         <p>event</p>
       </div>
       <div>
       <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-      <EventCard event={newEvent}/>
       </div>
         <EventGrid events={events} />
       </div>

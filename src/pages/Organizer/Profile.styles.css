@@ -14,3 +14,8 @@
   width: 120vw;
   height: 250px;
 }
+
+.venue-info-container {
+  width: 80vw;
+  margin: 0 auto;
+}
